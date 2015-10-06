@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite1]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="Login test_chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testSample">
+        <methods>
+          <include name="Closebrowser"/>
+          <include name="Closebrowser"/>
+          <include name="testLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testSample -->
+    </classes>
+  </test> <!-- Login test_chrome(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
